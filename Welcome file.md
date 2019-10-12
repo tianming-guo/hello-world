@@ -13,7 +13,6 @@
     <div class="stackedit__toc">
       
 <ul>
-<li><a href="#heading">Heading</a></li>
 <li><a href="#configuration-on-naas">Configuration on naas</a></li>
 <li><a href="#naas">1. NAAS</a>
 <ul>
@@ -36,8 +35,7 @@
   </div>
   <div class="stackedit__right">
     <div class="stackedit__html">
-      <h1 id="heading">Heading</h1>
-<p>COn</p>
+      <header> COnCOn</header>
 <h1 id="configuration-on-naas">Configuration on naas</h1>
 
 <table>
