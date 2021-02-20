@@ -1,0 +1,41 @@
+avr@avr.pop:~$ sudo supervisorctl
+aos_agent                        RUNNING    pid 3609, uptime 0:03:44
+blackbox_exporter                RUNNING    pid 3615, uptime 0:03:44
+checkRoutingIPsec                RUNNING    pid 3612, uptime 0:03:44
+gotty                            RUNNING    pid 3613, uptime 0:03:44
+ipsec_status                     RUNNING    pid 3611, uptime 0:03:44
+node_exporter                    RUNNING    pid 3610, uptime 0:03:44
+service_monitor                  RUNNING    pid 3614, uptime 0:03:44
+supervisor> 
+avr@avr.pop:~$ sudo supervisorctl status
+aos_agent                        RUNNING    pid 3609, uptime 0:03:53
+blackbox_exporter                RUNNING    pid 3615, uptime 0:03:53
+checkRoutingIPsec                RUNNING    pid 3612, uptime 0:03:53
+gotty                            RUNNING    pid 3613, uptime 0:03:53
+ipsec_status                     RUNNING    pid 3611, uptime 0:03:53
+node_exporter                    RUNNING    pid 3610, uptime 0:03:53
+service_monitor                  RUNNING    pid 3614, uptime 0:03:53
+avr@avr.pop:~$ cd /var
+avr@avr.pop:/var$ ls
+backups  cache  core  lib  local  lock  log  mail  opt  run  spool  tmp  www
+avr@avr.pop:/var$ cd /etc
+avr@avr.pop:/etc$ cd su
+sudoers.d/  supervisor/ 
+avr@avr.pop:/etc$ cd supervisor/
+avr@avr.pop:/etc/supervisor$ cd conf.d/
+avr@avr.pop:/etc/supervisor/conf.d$ ls
+aos_agent.conf          checkRoutingIPsec.conf       gotty.conf                   ipsec_status.conf          node_exporter.conf
+blackbox_exporter.conf  dnsmasq_status.conf.disable  haproxy_status.conf.disable  nginx_status.conf.disable  service_monitor.conf
+avr@avr.pop:/etc/supervisor/conf.d$ ls -l
+total 40
+-rw-r--r-- 1 root root 552 Jul 18 06:54 aos_agent.conf
+-rw-r--r-- 1 root root 380 Jul 18 06:55 blackbox_exporter.conf
+-rw-r--r-- 1 root root 154 Jul 18 06:55 checkRoutingIPsec.conf
+-rw-r--r-- 1 root root 295 Jul 18 06:55 dnsmasq_status.conf.disable
+-rw-r--r-- 1 root root 359 Jul 18 06:54 gotty.conf
+-rw-r--r-- 1 root root 310 Jul 18 06:55 haproxy_status.conf.disable
+-rw-r--r-- 1 root root 289 Jul 18 06:55 ipsec_status.conf
+-rw-r--r-- 1 root root 302 Jul 18 06:55 nginx_status.conf.disable
+-rw-r--r-- 1 root root 528 Jul 18 06:55 node_exporter.conf
+-rw-r--r-- 1 root root 298 Jul 18 06:56 service_monitor.conf
+avr@avr.pop:/etc/supervisor/conf.d$ 
