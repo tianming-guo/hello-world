@@ -39,3 +39,4 @@ total 40
 -rw-r--r-- 1 root root 528 Jul 18 06:55 node_exporter.conf
 -rw-r--r-- 1 root root 298 Jul 18 06:56 service_monitor.conf
 avr@avr.pop:/etc/supervisor/conf.d$ 
+test new
